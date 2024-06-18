@@ -1,0 +1,76 @@
+.section-pastillas article div p{
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+
+.section-pastillas article div:hover p{
+    opacity: 1;
+}
+
+#quienSomos{
+    color: #0074B5;
+}
+#contacto{
+    color: #889400;
+}
+#productos{
+    color: #B38C00;
+}
+#pyr{
+    color: #5B6BFF;
+}
+
+.container-testimonio{
+    width: 500px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-image: url("../img/backgrounds/testimonios.png");
+    background-size: cover;
+}
+
+.galeria-img div{
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.75);
+}
+
+.galeria-img div div{
+    box-shadow: 0px 2px 8px 0px;
+}
+
+.galeria-img div div{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: -35px;
+}
+
+.galeria-img p{
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+
+.galeria-img:hover p{
+    opacity: 1;
+}
+
+.galeria-desplazada{
+    margin-top: 150px;
+}
+
+#galeriaColDer{
+    margin-top: 150px;
+}
+
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(60px);
+    }
+}

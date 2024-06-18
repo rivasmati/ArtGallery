@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    font-family: Josefin Sans, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    font-size: 32px;
+}
+
+main{
+    margin-top: 70px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header img{
+    height: 24px;
+}
+
+.carousel-item img{
+    max-height: 80vh;
+    width: 100vw;
+}
+
+.testimonios article img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.icono{
+    height: 64px;
+}
+
+.redes{
+    height: 54px;
+}
+
+.subir{
+    background-color: black;
+    height: 58px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+}
+

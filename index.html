@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-index.css">
+    
+    
+    <link rel="stylesheet" href="./vendors/whatsApp/floating-wpp.css">
+    <link rel="stylesheet" href="./vendors/flipster/dist/jquery.flipster.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="./vendors/flipster/dist/jquery.flipster.min.js"></script>
+
+
+    <title>Galeria de arte</title>
+</head>
+<body>
+    <header class="bg-body-tertiary" id="arriba">
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <div class="container" >
+                <div class="row row-cols-3 w-100 align-items-center">
+                    <div class="col">
+                        <a class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasIndex" role="button" aria-controls="offcanvasIndex">
+                            <img src="./img/icons/menu.svg" alt="Hamburger menu">
+                        </a>
+                    </div>
+
+                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasIndex" aria-labelledby="offcanvasIndexLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasIndexLabel">Art Gallery</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        <hr>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled nav nav-underline d-flex flex-column mb-2">
+                                <li class="nav-item active"><a href="./index.html" class="text-light nav-link">Inicio</a></li>
+                                <li class="nav-item"><a href="./productos.html" class="text-light nav-link">Nuestros Productos</a></li>
+                                <li class="nav-item"><a href="./quienesSomos.html" class="text-light nav-link">Quienes Somos</a></li>
+                                <li class="nav-item"><a href="./pyr.html" class="text-light nav-link">Preguntas y Respuestas</a></li>
+                                <li class="nav-item"><a href="./contacto.html" class="text-light nav-link">Contactanos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col text-center">
+                        <h1 class="mb-0 h1 d-none">Art Gallery</h1>
+                        <a class="navbar-brand p-0 m-0 ms-4" href="./index.html">
+                            <img class="img-fluid" src="./img/icons/logo_b.webp" alt="ART Gallery" width="50" height="50">
+                        </a>
+                    </div>
+                    <div class="col text-end">
+                        <a href="./productos.html"><img src="./img/icons/cart.svg" alt="Cart"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-5 mb-4">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/pictures/banner1.png" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-6 fw-semibold mb-5">Nueva exposición 2024</h5>
+                <a href="" class="btn btn-light mb-5 rounded-pill fw-semibold">¡Conoce más!</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pictures/banner2.png" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-6 fw-semibold mb-5">¿Queres exponer tu arte?</h5>
+                    <a href="./contacto.html" class="btn btn-light mb-5 rounded-pill fw-semibold">Escribinos</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pictures/banner3.png" class="d-block " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-6 fw-semibold mb-5">Obras únicas a la venta</h5>
+                    <a href="./productos.html" class="btn btn-light mb-5 rounded-pill fw-semibold">¡Conocelas!</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pictures/galerias-de-arte.png" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-6 fw-semibold mb-5">Vení a vivir momentos únicos</h5>
+                    <a href="./quienesSomos.html" class="btn btn-light mb-5 rounded-pill fw-semibold">Sacá tu entrada</a>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <div class="container ">
+        <div class="row justify-content-center">
+            <hr class="line w-75 my-3">
+        </div>
+    </div>
+
+    <section class="container mt-3 mb-4 section-pastillas">
+        <div class="row row-cols-2 row-cols-md-4 gx-md-5 align-items-center">
+            <article class="col text-center">
+                <div class="d-flex flex-column align-items-center p-0">
+                    <a href="./quienesSomos.html" class="p-0 p-md-3 mb-0" id="quienSomos">
+                        <img src="./img/icons/conocenosColor.png" alt="" class="w-50 mb-2">
+                        <p class="mb-0">Nosotros</p>
+                    </a>
+                </div>
+            </article>
+            <article class="col text-center">
+                <div class="d-flex flex-column align-items-center p-0">
+                    <a href="./contacto.html" class="p-0 p-md-3 mb-0" id="contacto">
+                        <img src="./img/icons/contactanosColor.png" alt="" class="w-50 mb-2">
+                        <p class="mb-0">Contactanos</p>
+                    </a>
+                </div>
+            </article>
+            <article class="col text-center">
+                <div class="d-flex flex-column align-items-center p-0">
+                    <a href="./productos.html" class="p-0 p-md-3 mb-0" id="productos">
+                        <img src="./img/icons/productosColor.png" alt="" class="w-50 mb-2">
+                        <p class="mb-0">Nuestros productos</p>
+                    </a>
+                </div>
+            </article>
+            <article class="col text-center">
+                <div class="d-flex flex-column align-items-center p-0">
+                    <a href="./pyr.html" class="p-0 p-md-3 mb-0" id="pyr">
+                        <img src="./img/icons/pyrColor.png" alt="" class="w-50 mb-2">
+                        <p class="mb-0">Preguntas</p>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <section class="container-fluid mb-5">
+        <div class="row align-items-center bg-body-tertiary">
+            <div class="col-12 col-md-6 ">
+                <div class="text-center px-md-4 h-100">
+                    <img src="./img/icons/logo_byn.webp" alt="" width="250" class="ms-4 mb-0 mt-0 p-0 w-25 w-md-100">
+                    <h2>Bienvenidos a Art Gallery</h2>
+                    <hr>
+                    <p class="mb-4">En <strong>Art Gallery</strong>, celebramos y promovemos el arte en todas sus formas. Nos especializamos en la venta de obras de artistas reconocidos y emergentes, ofreciendo una plataforma exclusiva para destacar su talento. Organizamos exposiciones cuidadosamente curadas y creamos una comunidad vibrante de coleccionistas y entusiastas del arte. Únete a nosotros para descubrir, disfrutar y llevarte a casa piezas únicas que inspirarán tu vida.</p>
+                </div>
+            </div>
+            <img src="./img/pictures/ArtGallery.jpg" alt="" class="col-12 col-md-6 p-0 img-fluid">
+        </div>
+    </section>
+
+    <section class="container testimonios mb-5">
+        <h2>Testimonios</h2>
+        <hr>
+            
+        <div id="flat">
+            <ul>
+                <li >
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio1.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Ana</h3>
+                        <p class="px-3">La galería tenía una impresionante variedad de arte contemporáneo. Encontré una obra perfecta para mi sala.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio2.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Carlos</h3>
+                        <p class="px-3">Visitar esta galería fue una experiencia única. Adquirí una pintura de paisaje que me recuerda a mi infancia.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio4.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Lucía</h3>
+                        <p class="px-3">La atención del personal fue excepcional. Compré una pieza de arte moderno que adorna mi oficina.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio3.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Pedro</h3>
+                        <p class="px-3">Quedé encantado con la colección de arte clásico. Llevé a casa un retrato que se ve fantástico en mi sala.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio6.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>María</h3>
+                        <p class="px-3">La galería es un tesoro de creatividad. Compré una obra abstracta que agrega un toque especial a mi hogar.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio5.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>José</h3>
+                        <p class="px-3">El servicio al cliente fue excelente. Encontré una pintura que me fascinó y ahora es el centro de mi colección.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio7.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Elena</h3>
+                        <p class="px-3">Me impresionó la calidad de las obras expuestas. Compré un cuadro surrealista que me inspira cada día.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio8.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Raúl</h3>
+                        <p class="px-3">La galería tiene una atmósfera acogedora. Adquirí una pieza contemporánea que le da vida a mi sala.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio9.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Sofía</h3>
+                        <p class="px-3">Disfruté mucho la visita a la galería. Me llevé una pintura de paisajes que ahora es mi favorita.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3 bg-body-tertiary rounded-4 text-center container-testimonio">
+                        <img src="./img/pictures/testimonios/testimonio10.png" alt="" class="mb-4 rounded-circle" style="width: 100px; height: 100px;">
+                        <h3>Miguel</h3>
+                        <p class="px-3">La selección de arte es maravillosa. Compré un cuadro de un artista emergente y estoy encantado.</p>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="container mb-3">
+        <h2>Artistas que debes conocer</h2>
+        <hr>
+        <p class="w-100 mb-4">Descubre a los talentos más influyentes y prometedores del mundo del arte. <br>A continuación, te presentamos una selección de artistas destacados cuya obra y visión están marcando tendencia a nivel global.</p>
+
+            <div class="d-none d-md-block">
+                <div class="row row-cols-5">
+                    <picture class="col galeria-img ">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_joven_de_la_perla.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Johannes Vermeer</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img galeria-desplazada">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/el_beso.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Gustav Klimt</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img ">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/el_nacimiento_de_venus.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Sandro Botticelli</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img galeria-desplazada">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/guernica.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Pablo Picasso</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img ">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_noche_estrellada.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Vincent Van Gogh</p>
+                            </div>
+                        </div>
+                    </picture>
+                </div>
+                <div class="row row-cols-2 row-cols-md-5 mb-5">
+                    <picture class="col galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/las_meninas.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Diego Velázquez</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img galeria-desplazada">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/las_dos_fridas.webp" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Frida Kahlo</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img ">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_ultima_cena.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Leonardo Da Vinci</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img galeria-desplazada">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_ronda_de_noche.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Rembrandt</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="col galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/el_jardin_de_las_delicias.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0 ">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Jheronimus Bosch</p>
+                            </div>
+                        </div>
+                    </picture>
+                </div>
+            </div>
+
+            <div class="row row-cols-2 d-md-none">
+                <div class="col">
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_joven_de_la_perla.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Johannes Vermeer</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/el_beso.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Gustav Klimt</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/el_nacimiento_de_venus.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Sandro Botticelli</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/guernica.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Pablo Picasso</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_noche_estrellada.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Vincent Van Gogh</p>
+                            </div>
+                        </div>
+                    </picture>
+                </div>
+                <div class="col" id="galeriaColDer">
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/las_meninas.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Diego Velázquez</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/las_dos_fridas.webp" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Frida Kahlo</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_ultima_cena.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Leonardo Da Vinci</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/la_ronda_de_noche.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Rembrandt</p>
+                            </div>
+                        </div>
+                    </picture>
+                    <picture class="galeria-img">
+                        <div class="bg-warning bg-gradient rounded-pill">
+                            <img src="./img/pictures/galeria/el_jardin_de_las_delicias.jpg" alt="" class="rounded-pill w-100 p-2">
+                            <div class="bg-body-tertiary rounded-pill p-0 ">
+                                <p class="py-1 px-2 mb-0 fw-semibold">Jheronimus Bosch</p>
+                            </div>
+                        </div>
+                    </picture>
+                </div>
+            </div>
+    </section>
+            
+<div id="myDiv"></div>
+<a href="#arriba"><img src="./img/icons/arriba.svg" alt="" class="subir"></a>
+
+<footer class="bg-dark container-fluid pt-3">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-3 me-md-4 text-light mb-3 mb-md-0">
+            <p class="my-1">Programación y Desarrollo</p>
+            <p class="my-1">Matias Rivas, Adrian Birnbaun, Francisco Lo Guzzo</p>
+            <p class="my-1">TG2B - 2024</p>
+        </div>
+        <div class="col-8 offset-2 offset-md-0 col-md-3 ms-4 d-md-flex justify-content-md-between align-items-md-center">
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/icons/instagram.svg" alt="" class="redes"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./img/icons/facebook.svg" alt="" class="redes"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="./img/icons/youtube.svg" alt="" class="redes"></a>
+            <a href="https://x.com/home" target="_blank"><img src="./img/icons/twitter.svg" alt="" class="redes"></a>
+        </div>
+    </div>
+    <p class="text-center text-white-50 pb-0 mb-0">&copy; Copyright 2024</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./vendors/whatsApp/floating-wpp.js"></script>
+
+
+    <script type="text/javascript">
+        
+        $('#myDiv').floatingWhatsApp({
+        phone: '5491150002155',
+        position: 'right'
+        });
+
+        $('.my-flipster').flipster();
+
+        $("#flat").flipster({
+            style: 'flat',
+            spacing: -0.25
+        });
+    </script>
+
+    
+
+
+</body>
+</html>

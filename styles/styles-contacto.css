@@ -1,0 +1,14 @@
+article p{
+    margin-top: -12px;
+}
+
+.contenedor-circulo{
+    height: 88px;
+    width: 88px;
+    border-radius: 50px;
+}
+
+.subscripcion{
+    background-image: url(../img/backgrounds/subscripcion.jpg);
+    background-size: cover;
+}

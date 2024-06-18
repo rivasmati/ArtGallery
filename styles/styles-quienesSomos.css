@@ -1,0 +1,10 @@
+#quienesSomos{
+    background-image: url(../img/backgrounds/manos.png);
+    background-size: cover;
+}
+
+@media (max-width: 995px){
+    #quienesSomos{
+        background-image: none;
+    }
+}
