@@ -23,18 +23,20 @@ $(document).ready(function () {
                     <p data-name="product_desc" class="mb-0">${product.artista}</p>
                     <hr class="line my-1">
                     <div class="d-flex flex-column justify-content-around h-75">
-                        <div class="form-group ">
-                            <label>Tamaño: </label>
-                            <select name="product_size" class="form-select form-select-sm input-sm bg-dark text-light w-75">
-                                <option>A3</option>
-                                <option>A4</option>
-                                <option>Oficio</option>
-                            </select>
-                        </div>
-                        <div class="form-group2">
-                            <label>Cantidad:</label><br>
-                            <input class="sc-cart-item-qty bg-dark text-light w-75" name="product_quantity" min="1" value="1" type="number">
-                        </div>
+                        <form action="">
+                            <div class="form-group ">
+                                <label>Tamaño: </label>
+                                <select name="product_size" class="form-select form-select-sm input-sm bg-dark text-light w-75">
+                                    <option>A3</option>
+                                    <option>A4</option>
+                                    <option>Oficio</option>
+                                </select>
+                            </div>
+                            <div class="form-group2">
+                                <label>Cantidad:</label><br>
+                                <input class="sc-cart-item-qty bg-dark text-light w-75" name="product_quantity" min="1" value="1" type="number">
+                            </div>
+                        </form>
                         <div class="d-flex justify-content-between h-25">
                             <input name="product_price" value="${product.precio}" type="hidden" />
                             <input name="product_id" value="${product.ID}" type="hidden" /> 
@@ -47,6 +49,17 @@ $(document).ready(function () {
     `;
 
         productContainer.append(productItem);
+    })
+
+    $('#smartcart').smartCart({
+        lang: {  
+            cartTitle: "Carrito",
+            checkout: 'Pagar',
+            clear: 'Borrar',
+            subtotal: 'Subtotal:',
+            cartRemove:'×',
+            cartEmpty: 'El carrito está vacío!<br />Elegí los productos que quieras.'
+            },            
     })
 }
 )
