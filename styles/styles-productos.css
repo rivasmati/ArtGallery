@@ -1,10 +1,18 @@
-.producto  h3{
-    font-size: 16px;
+.producto h3{
+    font-size: 24px;
+    height: 58px;
 }
 
 .producto p{
     font-size: 12px;
     color: #797979;
+}
+
+@media ( max-width:1200px){
+    .producto h3{
+        font-size: 20px;
+        height: 46px;
+    }
 }
 
 

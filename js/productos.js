@@ -16,36 +16,40 @@ $(document).ready(function () {
     const productContainer = $("#product-list");
     productos.forEach(product => {
         const productItem = `
-        <article class="sc-product-item thumbnail producto p-2 d-flex bg-body-tertiary rounded">
-                <img src="./img/pictures/galeria/${product.foto}" alt="${product.nombre}" class="w-50 rounded"data-name="product_image">
-                <div class="w-50 ms-3 caption">
-                    <h4 data-name="product_name" class="mb-0">${product.nombre}</h4>
-                    <p data-name="product_desc" class="mb-0">${product.artista}</p>
-                    <hr class="line my-1">
-                    <div class="d-flex flex-column justify-content-around h-75">
-                        <form action="">
-                            <div class="form-group ">
-                                <label>Tamaño: </label>
-                                <select name="product_size" class="form-select form-select-sm input-sm bg-dark text-light w-75">
-                                    <option>A3</option>
-                                    <option>A4</option>
-                                    <option>Oficio</option>
-                                </select>
+        <div class="col">
+            <article class="sc-product-item thumbnail producto p-2 d-flex bg-body-tertiary rounded">
+                    <img src="./img/pictures/galeria/${product.foto}" alt="${product.nombre}" class="w-50 rounded"data-name="product_image">
+                    <div class="w-50 ms-3 caption">
+                        <h3 data-name="product_name" class="mb-0">${product.nombre}</h3>
+                        <p data-name="product_desc" class="mb-0">${product.artista}</p>
+                        <hr class="line my-1">
+                        <div class="d-flex flex-column justify-content-around h-75">
+                            <form action="">
+                                <div class="form-group mb-lg-0 mb-xl-2">
+                                    <label>Tamaño: </label>
+                                    <select name="product_size" class="form-select form-select-sm input-sm  w-100">
+                                        <option>A3</option>
+                                        <option>A4</option>
+                                        <option>Oficio</option>
+                                    </select>
+                                </div>
+                                <div class="form-group2">
+                                    <label>Cantidad:</label><br>
+                                    <input class="sc-cart-item-qty w-100" name="product_quantity" min="1" value="1" type="number">
+                                </div>
+                            </form>
+                            <div class="d-flex justify-content-between align-items-end mb-2">
+                                <input name="product_price" value="${product.precio}" type="hidden" />
+                                <input name="product_id" value="${product.ID}" type="hidden" />
+                                <div class="w-50">
+                                    <h4 class="m-0"><strong class="price">$${product.precio}</strong></h4>
+                                </div>
+                                <div class= "w-50"><button class="sc-add-to-cart btn btn-success "><img src="./img/icons/carrito.png" alt="Comprar" class="img-fluid"></button></div>
                             </div>
-                            <div class="form-group2">
-                                <label>Cantidad:</label><br>
-                                <input class="sc-cart-item-qty bg-dark text-light w-75" name="product_quantity" min="1" value="1" type="number">
-                            </div>
-                        </form>
-                        <div class="d-flex justify-content-between h-25">
-                            <input name="product_price" value="${product.precio}" type="hidden" />
-                            <input name="product_id" value="${product.ID}" type="hidden" /> 
-                            <h4 class="precio"><strong class="price">$${product.precio}</strong></h4>
-                            <button class="sc-add-to-cart btn btn-success btn-sm">Comprar</button>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
+        </div>
     `;
 
         productContainer.append(productItem);
